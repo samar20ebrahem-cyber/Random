@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random | Guess</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <div class="theme-switch-container">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+        <span class="theme-text">Dark Mode</span>
+    </div>
+     <!-- card 1هنا بيختار رقم عشوائي وعلي حسب الرقم بنطلع له نصيحه برمجيه card 1 -->
+   
+     <main class="games-wrapper">
+        <section class="container" id="card-advice">
+           <h1>Game Mode: Guess My Number </h1>
+           <br>
+           
+           <div class="input-field">
+            <h2>Guess 1 => 100</h2>
+            <br>
+            <input type="number" placeholder="Enter a number" max="100" min="1" id="input-advice">
+            <button type="submit" id="btn-advice">Check Guess</button>
+           </div>
+        </section>           
+   
+
+   <!-- card 2  هنا بنختار رقم عشوائي وو طلع صح بنطلع له رسالة انه كسب لو اصغر او اكبر بنقولة كبر شوية او صغر شوية  card 2  -->
+        <section class="container" id="card-guess">
+           <h1>Game Mode: Guess My Number</h1>
+           <br>
+           <div class="input-field">
+            <h2>Guess 1 => 100</h2>
+            <br>
+            <input type="number" placeholder="Enter a number" max="100" min="1" id="input-advice">
+            <button type="submit" id="btn-advice">Check Guess</button>
+           </div>
+        </section>           
+    </main>
+   
+<script type="module" src="main.js"></script>
+</body> 
+</html> 
