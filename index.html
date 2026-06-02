@@ -11,7 +11,7 @@
     
      <div class="theme-switch-container">
         <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" />
+            <input type="checkbox" id="checkbox"/>
             <div class="slider round"></div>
         </label>
         <span class="theme-text">Dark Mode</span>
@@ -24,10 +24,12 @@
            <br>
            
            <div class="input-field">
-            <h2>Guess 1 => 100</h2>
+            <h2>Guess 1 => 20</h2>
             <br>
-            <input type="number" placeholder="Enter a number" max="100" min="1" id="input-advice">
-            <button type="submit" id="btn-advice">Check Guess</button>
+            <input type="number" placeholder="Enter a number" max="20" min="1" id="input-advice">
+            <button type="button" id="btn-advice">Check Guess</button>
+            <button id="quote-text" class="quote-text" style="display: none;"></button>
+            <button type="button" id="btn-again" style="display: none;">Play Again </button>
            </div>
         </section>           
    
@@ -39,8 +41,10 @@
            <div class="input-field">
             <h2>Guess 1 => 100</h2>
             <br>
-            <input type="number" placeholder="Enter a number" max="100" min="1" id="input-advice">
-            <button type="submit" id="btn-advice">Check Guess</button>
+            <input type="number" placeholder="Enter a number" max="100" min="1" id="input-guess">
+            <button type="button" id="btn-submit">Check Guess</button>
+            <button id="msg-guess" class="result-message"style="display: none;"></button>
+            <button type="button" id="btn-reset" style="display: none;">Play Again </button>
            </div>
         </section>           
     </main>
