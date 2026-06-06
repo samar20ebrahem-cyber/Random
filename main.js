@@ -116,6 +116,7 @@ btnSubmit.addEventListener('click', function(){
     if(!inputGuess.value){
        msgGuess.textContent="دخل رقم ";
        msgGuess.style.color="orange";
+       msgGuess.style.display = 'block';
        return;
     };
 
@@ -125,31 +126,32 @@ btnSubmit.addEventListener('click', function(){
        msgGuess.style.display ='block';
        btnSubmit.style.display = "none";
        btnReset.style.display = "block";
+       inputGuess.style.display = "none";
 
     }else if  (userGuess > randomNumber) {
         msgGuess.textContent ="جرب رقم اصغر ";
         msgGuess.style.color="red";
         msgGuess.style.display ='block';
-        btnSubmit.style.display = "none";
-        btnReset.style.display = "block";
+        inputGuess.value = '';
+        inputGuess.focus();
     }else  {
         msgGuess.textContent ="جرب رقم اكبر ";
         msgGuess.style.color="red";
         msgGuess.style.display ='block';
-        btnSubmit.style.display = "none";
-        btnReset.style.display = "block";
+          inputGuess.value = '';
+         inputGuess.focus();
     };
-    inputGuess.style.display="none"; 
-    inputGuess.value='';
+   
 });
 
 btnReset.addEventListener('click', function() {
     randomNumber = Math.floor(Math.random() * 100) + 1; 
     msgGuess.textContent = ""; 
+    msgGuess.style.display ='none';
     btnSubmit.style.display = "block"; 
     btnReset.style.display = "none"; 
-    inputGuess.style.display="block";
-    msgGuess.style.display ='none';
+    inputGuess.style.display="block"; 
+    inputGuess.value = '';
     inputGuess.focus();
 
 });
